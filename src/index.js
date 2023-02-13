@@ -13,6 +13,8 @@ const {register,login}=require("./controllers/auth.controller")
 app.post("/register",register)
 app.post ("/login",login)
 
+const empolyeeController=require("./controllers/employee.controller")
+app.use("/employee",empolyeeController)
 
 const dataController=require("./controllers/data.controller")
 const bagController=require("./controllers/bag.controller")
